@@ -24,7 +24,7 @@ def calculate_step():
     hour = beijing_time.hour
     
     # 检查是否在7:00-21:00范围内
-    if 7 <= hour <= 22:
+    if 7 <= hour <= 24:
         # 计算时段索引（7:00为第0时段，9:00为第1时段，依此类推）
         period_index = (hour - 7) // 2
         # 每个时段增加1000，从7:00的1000开始
